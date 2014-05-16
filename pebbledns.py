@@ -1,4 +1,5 @@
-from dnslib import DNSRecord, RR, A, RCODE, QTYPE, SOA
+#!/usr/bin/python
+from dnslib import DNSRecord, RR, A, RCODE, QTYPE
 from dnslib.server import DNSHandler, DNSServer
 import re
 import settings
@@ -44,7 +45,7 @@ class PebbleResolver(object):
         # This is because we should not NXDOMAIN for domains that exist but have no records of
         # the specified type, so we have to go through the motions of checking validity first.
         reply = request.reply()
-        if request.q.qtype == getattr(QTYPE, 'A'):
+        if request.q.qtype == QTYPE.A:
             reply.add_answer(RR(request.q.qname, ttl=settings.TTL, rdata=A('%d.%d.%d.%d' % ip)))
 
         return reply
