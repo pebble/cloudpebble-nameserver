@@ -51,5 +51,5 @@ class PebbleResolver(object):
 
 
 if __name__ == "__main__":
-    server = DNSServer(PebbleResolver(), port=5053)
+    server = DNSServer(PebbleResolver(), port=settings.PORT)
     server.start()
