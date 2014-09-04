@@ -1,4 +1,4 @@
-TTL = 525600 * 60
+TTL = 60
 ROOT_DOMAIN = "ip.pebble-sockets.com"
 MNAME = "ns1.pbsock.getpebble.com."
 RNAME = "cloudpebble.getpebble.com."
