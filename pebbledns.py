@@ -48,7 +48,7 @@ class PebbleResolver(object):
 
         name = str(name.stripSuffix(settings.ROOT_DOMAIN))
 
-        match = re.match(r'ip-(\d{1,3})-(\d{1,3})-(\d{1,3})-(\d{1,3})', name)
+        match = re.match(r'ip-(\d{1,3})-(\d{1,3})-(\d{1,3})-(\d{1,3})\.?', name)
 
         if match is None:
             return nxdomain()
