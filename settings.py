@@ -1,3 +1,10 @@
 TTL = 525600 * 60
 ROOT_DOMAIN = "pebble-sockets.com"
-PORT = 53
+MNAME = "ns1.pbsock.getpebble.com."
+RNAME = "cloudpebble.getpebble.com."
+SOA_TIMESTAMP = 2014090401
+NAMESERVERS = (
+    'ns1.pbsock.getpebble.com',
+    'ns2.pbsock.getpebble.com',
+)
+PORT = 10053
