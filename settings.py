@@ -4,6 +4,6 @@ MNAME = "ns1.pbsock.getpebble.com."
 RNAME = "cloudpebble.getpebble.com."
 SOA_TIMESTAMP = 2014090401
 NAMESERVERS = (
-    'ns1.pbsock.getpebble.com'
+    'ns1.pbsock.getpebble.com',
 )
-PORT = 10053
+PORT = 53
